@@ -1,13 +1,13 @@
 <?php
-*/
+/*
 _Pocketmine Plugin_
 name=SpeedyAromor
 description=the speedest way to change armor
-version:0.1
-class=armor
+version=0.1
 auther=hamachichi
-apiversion=12,13
-/*
+class=armor
+apiversion=12 13
+*/
 
 class armor implements Plugin
 {
@@ -53,7 +53,7 @@ class armor implements Plugin
           public function __destruct(){
     }
                 
-                
+}          
                 
                 
                 
