@@ -1,15 +1,15 @@
 <?php
 /*
-_Pocketmine Plugin_
+__Pocketmine Plugin__
 name=SpeedyAromor
 description=the speedest way to change armor
 version=0.1
-auther=hamachichi
-class=armor
-apiversion=12 13
+Author=hamachichi
+class=speed
+apiversion=11,12,13,
 */
 
-class armor implements Plugin
+class speed implements Plugin
 {
     private $api;
 
@@ -55,7 +55,7 @@ class armor implements Plugin
                 
 }          
                 
-                
+?>
                 
                 
                 
