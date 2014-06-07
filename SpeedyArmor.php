@@ -3,7 +3,7 @@
 __PocketMine Plugin__
 class=SpeedyArmor
 name=SpeedyArmor
-author=hama
+author=hamachichi
 version=1
 apiversion=12,13
 */
@@ -30,7 +30,7 @@ class SpeedyArmor implements Plugin{
             $this->api->addHandler("player.equipment.change", array($this, "EventHandler"));
             }
             
-             public function EventHandler($data, $event,$player)
+             public function EventHandler($data, $event)
     {
         switch($event)
         {
@@ -38,10 +38,10 @@ class SpeedyArmor implements Plugin{
 
                 if($data["264"]->getID() == $this->CONFIG["blue"])
                 {
-      $player->setArmor(0,$this->getArmor(310));
-      $player->setArmor(1,$this->getArmor(311));
-      $player->setArmor(2,$this->getArmor(312));
-      $player->setArmor(3,$this->getArmor(313));
+      $data->setArmor(0,$this->getArmor(310));
+      $data->setArmor(1,$this->getArmor(311));
+      $data->setArmor(2,$this->getArmor(312));
+      $data->setArmor(3,$this->getArmor(313));
                 
                 }
                   break;
@@ -51,10 +51,10 @@ class SpeedyArmor implements Plugin{
 
                 if($data["266"]->getID() == $this->CONFIG["yellow"])
                 {
-      $player->setArmor(0,$this->getArmor(314));
-      $player->setArmor(1,$this->getArmor(315));
-      $player->setArmor(2,$this->getArmor(316));
-      $player->setArmor(3,$this->getArmor(317));
+      $data->setArmor(0,$this->getArmor(314));
+      $data->setArmor(1,$this->getArmor(315));
+      $data->setArmor(2,$this->getArmor(316));
+      $data->setArmor(3,$this->getArmor(317));
                 }
                   break;
                  
@@ -63,10 +63,10 @@ class SpeedyArmor implements Plugin{
 
                 if($data["265"]->getID() == $this->CONFIG["gray"])
                 {
-      $player->setArmor(0,$this->getArmor(306));
-      $player->setArmor(1,$this->getArmor(307));
-      $player->setArmor(2,$this->getArmor(308));
-      $player->setArmor(3,$this->getArmor(309));
+      $data->setArmor(0,$this->getArmor(306));
+      $data->setArmor(1,$this->getArmor(307));
+      $data->setArmor(2,$this->getArmor(308));
+      $data->setArmor(3,$this->getArmor(309));
                 }
             
                   break;
@@ -75,10 +75,10 @@ class SpeedyArmor implements Plugin{
 
                 if($data["334"]->getID() == $this->CONFIG["brown"])
                 {
-      $player->setArmor(0,$this->getArmor(298));
-      $player->setArmor(1,$this->getArmor(299));
-      $player->setArmor(2,$this->getArmor(300));
-      $player->setArmor(3,$this->getArmor(301));
+      $data->setArmor(0,$this->getArmor(298));
+      $data->setArmor(1,$this->getArmor(299));
+      $data->setArmor(2,$this->getArmor(300));
+      $data->setArmor(3,$this->getArmor(301));
                 }
                 
                   break;
@@ -87,11 +87,12 @@ class SpeedyArmor implements Plugin{
 
                 if($data["331"]->getID() == $this->CONFIG["red"])
                 {
-      $player->setArmor(0,$this->getArmor(310));
-      $player->setArmor(1,$this->getArmor(307));
-      $player->setArmor(2,$this->getArmor(316));
-      $player->setArmor(3,$this->getArmor(301));
+      $data->setArmor(0,$this->getArmor(310));
+      $data->setArmor(1,$this->getArmor(307));
+      $data->setArmor(2,$this->getArmor(316));
+      $data->setArmor(3,$this->getArmor(301));
                 }
+                
                 
                   break;
                   
